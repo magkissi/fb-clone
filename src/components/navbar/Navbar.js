@@ -1,4 +1,17 @@
 import React from "react";
+import SearchIcon from "@material-ui/icons/Search";
+import HomeIcon from "@material-ui/icons/Home";
+import FlagIcon from "@material-ui/icons/Flag";
+import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
+import StorefrontIcon from "@material-ui/icons/Storefront";
+import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
+import AddIcon from "@material-ui/icons/Add";
+import ForumIcon from "@material-ui/icons/Forum";
+import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { IconButton } from "@material-ui/core";
+import UserIcon from "./UserIcon";
+
 import "./navbar.css";
 
 function Navbar() {
@@ -6,11 +19,11 @@ function Navbar() {
     <div className="wrapper">
       <div className="left_header">
         <div className="logo">
-          <img src="/img/fb-logo.svg" />
+          <img src="/img/fb-logo.svg" alt="" />
         </div>
 
         <div className="search">
-          <img className="search_icon" src="/img/search.png" />
+          <SearchIcon />
           <input
             className="search_input"
             type="text"
@@ -20,38 +33,38 @@ function Navbar() {
       </div>
       <div className="middle_header">
         <div className="header_option header_option--active">
-          <img src="/img/home.png" alt="" />
+          <HomeIcon fontSize="large" />
         </div>
         <div className="header_option">
-          <img src="/img/flag.png" alt="" />
+          <FlagIcon fontSize="large" />
         </div>
         <div className="header_option">
-          <img src="/img/video.jpg" alt="" />
+          <SubscriptionsIcon fontSize="large" />
         </div>
         <div className="header_option">
-          <img src="/img/storefront.png" alt="" />
+          <StorefrontIcon fontSize="large" />
         </div>
         <div className="header_option">
-          <img src="/img/people.jpg" alt="" />
+          <SupervisedUserCircleIcon fontSize="large" />
         </div>
       </div>
       <div className="right_header">
         <div className="header_option">
-          <img src="/img/avatar.jpg" alt="" />
+          <UserIcon src="/img/avatar.jpg" />
           <h4>Mag Kissi</h4>
         </div>
-        <div className="header_option">
-          <img src="/img/plus.png" alt="" />
-        </div>
-        <div className="header_option">
-          <img src="/img/forum.png" alt="" />
-        </div>
-        <div className="header_option">
-          <img src="/img/notification.png" alt="" />
-        </div>
-        <div className="header_option down_arrow">
-          <img src="/img/downArrow.png" alt="" />
-        </div>
+        <IconButton>
+          <AddIcon />
+        </IconButton>
+        <IconButton>
+          <ForumIcon />
+        </IconButton>
+        <IconButton>
+          <NotificationsActiveIcon />
+        </IconButton>
+        <IconButton>
+          <ExpandMoreIcon />
+        </IconButton>
       </div>
     </div>
   );

@@ -13,9 +13,6 @@
   align-items: center;
 }
 
-img {
-  height: 30px;
-}
 .search {
   display: flex;
   align-items: center;
@@ -35,6 +32,8 @@ img {
 
 .middle_header {
   display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
 .header_option {
@@ -42,6 +41,14 @@ img {
   align-items: center;
   padding: 0 30px;
   cursor: pointer;
+}
+
+.header_option > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.header_option:hover > .MuiSvgIcon-root {
+  color: #2e82f4;
 }
 
 .header_option--active {
@@ -63,9 +70,21 @@ img {
 
 .right_header {
   display: flex;
+  align-items: center;
+}
+
+.right_header h4 {
+  margin-left: 5px;
 }
 
 .logo {
   cursor: pointer;
   margin-right: 5px;
+}
+.logo img {
+  height: 40px;
+}
+
+#avatar {
+  height: 40px;
 }

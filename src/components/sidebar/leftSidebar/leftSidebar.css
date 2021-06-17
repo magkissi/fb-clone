@@ -1,0 +1,21 @@
+.leftSidebar {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.leftSidebar:hover {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.leftSidebar > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: #2e81f4;
+}
+
+.leftSidebar_title {
+  margin-left: 20px;
+  font-weight: 600;
+}
