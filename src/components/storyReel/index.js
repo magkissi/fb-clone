@@ -30,10 +30,6 @@ function StoryReel() {
         title="benji"
         image="/img/laptop5.jpg"
       />
-      {/*story*/}
-      {/*story*/}
-      {/*story*/}
-      {/*story*/}
     </div>
   );
 }
