@@ -15,11 +15,17 @@
 
 .post_topInfo h3 {
   font-size: medium;
+  margin: 0;
+}
+
+.post_topInfo {
+  margin-left: 5px;
 }
 
 .post_topInfo p {
   font-size: small;
   color: gray;
+  margin: 0;
 }
 
 .post_avatar {
@@ -63,4 +69,9 @@
 .post_option:hover {
   background-color: #eff2f5;
   border-radius: 10px;
+}
+
+#countLike {
+  color: #2e82f4;
+  margin-right: 10px;
 }

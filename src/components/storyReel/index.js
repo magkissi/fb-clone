@@ -8,28 +8,20 @@ function StoryReel() {
       <Story
         profileSrc="/img/avatar.jpg"
         title="benji"
-        image="/img/laptop1.jpg"
+        image="/img/flower.jpg"
+      />
+      <Story profileSrc="/img/avatar.jpg" title="benji" image="/img/ship.jpg" />
+      <Story
+        profileSrc="/img/avatar.jpg"
+        title="benji"
+        image="/img/Kwame-Nkrumah.jpg"
       />
       <Story
         profileSrc="/img/avatar.jpg"
         title="benji"
-        image="/img/laptop2.jpg"
+        image="/img/steve.jpg"
       />
-      <Story
-        profileSrc="/img/avatar.jpg"
-        title="benji"
-        image="/img/laptop3.png"
-      />
-      <Story
-        profileSrc="/img/avatar.jpg"
-        title="benji"
-        image="/img/laptop4.jpg"
-      />
-      <Story
-        profileSrc="/img/avatar.jpg"
-        title="benji"
-        image="/img/laptop5.jpg"
-      />
+      <Story profileSrc="/img/avatar.jpg" title="benji" image="/img/doll.jpg" />
     </div>
   );
 }
