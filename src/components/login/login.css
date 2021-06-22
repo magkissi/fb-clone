@@ -30,3 +30,7 @@
 .login button:focus {
   outline: none;
 }
+
+#fb_text {
+  width: 50px;
+}

@@ -13,8 +13,11 @@ import { IconButton } from "@material-ui/core";
 import UserIcon from "./UserIcon";
 
 import "./navbar.css";
+import { useStateValue } from "../../StateProvider";
 
 function Navbar() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="wrapper">
       <div className="left_header">
@@ -50,8 +53,8 @@ function Navbar() {
       </div>
       <div className="right_header">
         <div className="header_option">
-          <UserIcon src="/img/avatar.jpg" />
-          <h4>Mag Kissi</h4>
+          <UserIcon src={user.photoURL} />
+          <h4>{user.displayName}</h4>
         </div>
         <IconButton>
           <AddIcon />

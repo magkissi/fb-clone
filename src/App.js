@@ -5,9 +5,10 @@ import Sidebar from "./components/sidebar";
 import Feed from "./components/feed";
 import Widget from "./components/widget";
 import Login from "./components/login";
+import { useStateValue } from "./StateProvider";
 
 function App() {
-  const user = null;
+  const [{ user }, dispatch] = useStateValue();
 
   return (
     <div className="app">
@@ -26,8 +27,6 @@ function App() {
       )}
       ;
     </div>
-    /*app body in the center*/
-    /*widgets on the right*/
   );
 }
 export default App;
