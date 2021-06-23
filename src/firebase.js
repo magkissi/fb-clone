@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCcwpgsL0sRs1E2eh7wSOBX4_3y2tIPxcI",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "facebook-clone-105cb.firebaseapp.com",
   projectId: "facebook-clone-105cb",
   storageBucket: "facebook-clone-105cb.appspot.com",
-  messagingSenderId: "420286611940",
-  appId: "1:420286611940:web:43b4a8785fcef94ffb87f1",
+  messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_ID,
   measurementId: "G-DEBFSWER3T",
 };
 
